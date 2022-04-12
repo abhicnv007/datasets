@@ -14,7 +14,7 @@ def sample():
             if random.random() > needed:
                 continue
 
-            row["decade"] = row["track_album_release_date"][:2] + "00"
+            row["decade"] = row["track_album_release_date"][:3] + "0"
             selected_rows.append(row)
 
     keys = selected_rows[0].keys()
